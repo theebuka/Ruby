@@ -17,19 +17,19 @@ nav.navigation {
 }
 nav.navigation div.hamburger-react {
   margin-right: 0 !important;
+  margin-left: 4vw;
 }
 nav.navigation div.hamburger-react > div:last-child {
   width: 14px !important;
 }
 nav.navigation .logo a {
-  width: auto;
   color: #ffffff;
   text-decoration: none;
   font-size: 4vw;
   font-family: 'Open Sans';
   font-weight: normal;
   font-style: normal;
-  line-height: 0.9em;
+  line-height: 1vw;
   text-transform: uppercase;
   text-align: justify;
 }
@@ -38,13 +38,41 @@ footer {
   font-size: 0.8rem;
   padding: 0.75rem
 }
+.social-list {
+  width: auto;
+  height: auto;
+}
+.social-list ul {
+  padding: 0;
+}
+li.social-list-item {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+}
+li.social-list-item a svg {
+  color: #ffffff;
+}
+button.button {
+  color: #ffffff;
+  background-color: #1f1f1f;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  padding: 1.2rem 0;
+  font-family: 'Open Sans';
+  font-size: 3.75vw;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+}
 .Home, .About, .Projects, .Contact {
-  /* padding-left: 1.6rem;
-  padding-right: 1.6rem; */
+  padding: 4rem 1.6rem 2rem;
 }
 
 .Home div.main {
-  padding: 1.75rem;
+  /* padding: 2rem 0 0.5rem; */
 }
 .Home .round-image img {
   border-radius: 50%;
@@ -62,4 +90,45 @@ footer {
   width: 100%;
   font-family: 'Montserrat';
   font-weight: bold;
+}
+.menu {
+  height: 100vh;
+  width: 100%;
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0f0f;
+  z-index: 999;
+}
+.menu ul {
+  padding: 0;
+  margin: 0;
+}
+.menu ul li {
+  list-style: none;
+  padding-bottom: 2.5em;
+  text-align: center;
+}
+.menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-size: 5vw;
+}
+.About {
+  /* padding: 4rem 0 0.5rem; */
+}
+.body-text {
+  color: #ffffff;
+  font-family: 'Montserrat';
+  font-size: 6vw;
+  line-height: 10vw;
+  font-weight: normal;
+  font-style: normal;
+  padding-bottom: 4.5vw;
+  margin: 0;
+}
+.About button.button {
+  margin-top: 6vh;
 }

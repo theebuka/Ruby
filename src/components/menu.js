@@ -3,13 +3,17 @@ import NavItem from './navitem.js';
 
 class Menu extends Component {
     render() {
+        let closeMenu = () => {document.querySelector('.menu').style.display = 'none'; console.log("it worked!")};
         return(
-            <ol className="menu">
-                <NavItem path="/" label="Home" />
-                <NavItem path="/About" label="About" />
-                <NavItem path="/Projects" label="Projects" />
-                <NavItem path="/Contact" label="Contact" />
-            </ol>
+            <div className="menu">
+                <ul>
+                    <NavItem path="/" label="Home" onClick={closeMenu} />
+                    <NavItem path="/About" label="About" />
+                    <NavItem path="/Projects" label="Projects" />
+                    <NavItem path="/Contact" label="Contact" />
+                    <button onClick={closeMenu}>Test</button>
+                </ul>
+            </div>
         )
     }
 }

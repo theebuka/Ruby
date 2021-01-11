@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import RoundImage from './../components/round-img.js';
 import IntroText from './../components/home-text.js';
-import Footer from './../components/footer.js';
 
 class Home extends Component {
     render() {
@@ -11,7 +10,6 @@ class Home extends Component {
                     <RoundImage />
                     <IntroText />
                 </div>
-                <Footer />
             </section>
         )
     }
