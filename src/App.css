@@ -34,24 +34,61 @@ nav.navigation .logo a {
   text-align: justify;
 }
 footer {
-  color: #808080;
-  font-size: 0.8rem;
+  display: flex;
+  flex-flow: nowrap column;
+  background-color: #090909;
   padding: 0.75rem
 }
-.social-list {
-  width: auto;
-  height: auto;
+footer div.inquiry {
+  border-top: 2.5px solid #1f1f1f;
+  padding: 1.6rem 0.85rem 0.8rem;
 }
-.social-list ul {
+footer div.inquiry > span:first-child {
+  color: #6f6f6f;
+  font-size: 3.25vw;
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1vw;
+  text-transform: uppercase;
+  display: inline-block;
+}
+footer div.inquiry > span:last-child {
+  color: #ffffff;
+  font-size: 5.5vw;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1vw;
+  display: inline-block;
+  padding: 1.25rem 0;
+}
+footer > div:last-child {
+  display: flex;
+  flex-flow: nowrap row;
+}
+footer > div:last-child > div span {
+  color: #6f6f6f;
+  font-size: 3.75vw;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1vw;
+}
+div.social-list {
+  width: auto;
+}
+div.social-list ul {
   padding: 0;
+  margin: 0;
 }
 li.social-list-item {
   list-style-type: none;
   display: inline-block;
-  padding: 0.3rem 0.6rem;
+  padding: 0.4rem;
 }
 li.social-list-item a svg {
-  color: #ffffff;
+  color: #6f6f6f;
 }
 button.button {
   color: #ffffff;
@@ -68,7 +105,7 @@ button.button {
   text-transform: uppercase;
 }
 .Home, .About, .Projects, .Contact {
-  padding: 4rem 1.6rem 2rem;
+  padding: 20vw 1.6rem 20vw;
 }
 
 .Home div.main {
@@ -100,6 +137,7 @@ button.button {
   align-items: center;
   background-color: #0f0f0f;
   z-index: 999;
+  transition: display 0.75s ease-in-out;
 }
 .menu ul {
   padding: 0;
