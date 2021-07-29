@@ -11,7 +11,7 @@ class About extends Component {
                 <BodyText text="I'm able to create highly usable and visually appealing interfaces for mobile, web and desktop, conduct robust experience research and deliver handcrafted graphic material on schedule." />
                 <BodyText text="I've worked with notable brands such as Nike and Microsoft, and also charity work for a few NGOs." />
                 <BodyText text="I'm currently available for freelance or full-time hire, remote or on-location." />
-                <Button label="Download Resume" />
+                <Button type="button" label="Download Resume" />
             </section>
         );
     }

@@ -11,6 +11,7 @@ class Menu extends Component {
                     <NavItem path="/About" label="About" />
                     <NavItem path="/Projects" label="Projects" />
                     <NavItem path="/Contact" label="Contact" />
+                    <NavItem path="/Blog" label="Blog" />
                     <button onClick={closeMenu}>Test</button>
                 </ul>
             </div>

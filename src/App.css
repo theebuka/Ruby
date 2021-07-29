@@ -36,15 +36,15 @@ nav.navigation .logo a {
 footer {
   display: flex;
   flex-flow: nowrap column;
-  background-color: #090909;
-  padding: 0.75rem
+  background-color: #1f1f1f;
+  padding: 2em 0.75rem 1em;
 }
 footer div.inquiry {
-  border-top: 2.5px solid #1f1f1f;
-  padding: 1.6rem 0.85rem 0.8rem;
+  border-bottom: 2px solid #404044;
+  padding: 0.2rem 0.85rem 0.8rem;
 }
 footer div.inquiry > span:first-child {
-  color: #6f6f6f;
+  color: #404044;
   font-size: 3.25vw;
   font-family: 'Open Sans';
   font-weight: normal;
@@ -105,12 +105,9 @@ button.button {
   text-transform: uppercase;
 }
 .Home, .About, .Projects, .Contact {
-  padding: 20vw 1.6rem 20vw;
+  padding: 20vw 1.6rem 25vw;
 }
 
-.Home div.main {
-  /* padding: 2rem 0 0.5rem; */
-}
 .Home .round-image img {
   border-radius: 50%;
   width: 40vw;
@@ -129,7 +126,7 @@ button.button {
   font-weight: bold;
 }
 .menu {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: none;
   position: absolute;
@@ -137,7 +134,7 @@ button.button {
   align-items: center;
   background-color: #0f0f0f;
   z-index: 999;
-  transition: display 0.75s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .menu ul {
   padding: 0;
@@ -153,9 +150,11 @@ button.button {
   text-decoration: none;
   font-family: 'Montserrat';
   font-size: 5vw;
+  transition: all 0.4s ease-in;
 }
-.About {
-  /* padding: 4rem 0 0.5rem; */
+.menu ul li a:hover {
+  color: #202022;
+  font-size: 6.5vw;
 }
 .body-text {
   color: #ffffff;
@@ -169,4 +168,46 @@ button.button {
 }
 .About button.button {
   margin-top: 6vh;
+}
+.Contact > div:first-child {
+  margin-bottom: 15vw;
+}
+.Contact > div:last-child form {
+  width: auto;
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: center;
+}
+.Contact > div:last-child form label {
+  display: inline-block;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3vw;
+  line-height: 0;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+.Contact > div:last-child form input, .Contact > div:last-child form select, .Contact > div:last-child form textarea {
+  padding: 0.8rem;
+  background-color: #202022;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 5vw;
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+  display: block;
+  margin: 0 0 1.25rem !important;
+}
+.Contact > div:last-child form input:focus, .Contact > div:last-child form select:focus, .Contact > div:last-child form textarea:focus {
+  border-bottom: 2px solid #ffffff;
+  outline: none;
+}
+.Contact button.button {
+  margin-top: 6vw;
 }
